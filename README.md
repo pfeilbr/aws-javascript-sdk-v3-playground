@@ -26,7 +26,6 @@ learn AWS JavaScript SDK v3
 ```sh
 # run tests that exercise new features
 npm run test -- --watch
-
 ```
 
 ## Resources
