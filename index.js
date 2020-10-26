@@ -7,11 +7,12 @@ const listTables = async () => {
     // example using middleware to add custom header
     dynamodb.middlewareStack.add(
       (next, context) => (args) => {
+        console.log(args);
         args.request.headers["Custom-Header"] = "value";
         return next(args);
       },
       {
-        step: "build",
+        step: "build", // steps in order: initialize, serialize, build, finalizeRequest, deserialize
       }
     );
 

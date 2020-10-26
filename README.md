@@ -19,6 +19,13 @@ learn AWS JavaScript SDK v3
 
 > Each middleware stage in the stack calls the next middleware stage after making any changes to the request object. This also makes debugging issues in the stack much easier, because you can see exactly which middleware stages were called leading up to the error.
 
+**Use Cases**
+
+* debugging
+* logging
+* request updates
+* instrumentation
+
 ---
 
 ## Running
