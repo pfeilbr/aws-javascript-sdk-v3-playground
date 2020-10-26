@@ -26,6 +26,42 @@ learn AWS JavaScript SDK v3
 * request updates
 * instrumentation
 
+**Example middleware `args`**
+
+`DynamoDB` `ListTablesCommand`
+
+```js
+{
+      middlewareStack: {
+        add: [Function: add],
+        addRelativeTo: [Function: addRelativeTo],
+        clone: [Function: clone],
+        use: [Function: use],
+        remove: [Function: remove],
+        removeByTag: [Function: removeByTag],
+        concat: [Function: concat],
+        applyToStack: [Function: cloneTo],
+        resolve: [Function: resolve]
+      },
+      input: {},
+      request: HttpRequest {
+        method: 'POST',
+        hostname: 'dynamodb.us-east-1.amazonaws.com',
+        port: undefined,
+        query: {},
+        headers: {
+          'Content-Type': 'application/x-amz-json-1.0',
+          'X-Amz-Target': 'DynamoDB_20120810.ListTables',
+          'user-agent': 'aws-sdk-nodejs-v3-@aws-sdk/client-dynamodb/1.0.0-rc.2 darwin/v12.16.1',
+          'content-length': '2'
+        },
+        body: '{}',
+        protocol: 'https:',
+        path: '/'
+      }
+    }
+```
+
 ---
 
 ## Running
